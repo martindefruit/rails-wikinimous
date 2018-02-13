@@ -1,0 +1,12 @@
+<div class="text-center full_container">
+  <h1>Welcome to the wikinomous</h1>
+
+
+  <div class="text-center article_container">
+    <% @articles.each do |article| %>
+
+        <h1><%= link_to article.title, article_path(article) %></h1>
+        <p><%= article.content %></p>
+    <% end %>
+  </div>
+</div>
